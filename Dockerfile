@@ -1,4 +1,3 @@
-
 FROM node:16-alpine AS deps
 
 WORKDIR /app
@@ -11,4 +10,4 @@ ENV NODE_ENV production
 
 RUN yarn build
 
-CMD yarn start
+CMD npm run dev
